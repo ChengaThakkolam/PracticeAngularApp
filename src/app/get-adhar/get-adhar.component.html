@@ -1,0 +1,18 @@
+<br><br>
+
+<div class="container" >
+    <h4>Adhar Details </h4>
+    <table class="table table-small bg-light" >
+        <tr *ngFor="let a of adharDetailsList | keyvalue ">
+            <td style="font-size: large;font-family: 'Times New Roman', Times, serif;" class="text-warning">{{a.key}}</td>
+           <td><input type="text" value="{{a.value}}" class="form-control text-primary"></td>
+        </tr>
+
+       
+        <tr>
+            <td>
+                <button (click)="proceedDetails()" class="btn btn-info btn-outline-info">Proceed With Adhar Details</button>
+            </td>
+        </tr>
+    </table>
+</div>
